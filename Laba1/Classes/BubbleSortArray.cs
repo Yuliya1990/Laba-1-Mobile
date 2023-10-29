@@ -16,13 +16,14 @@ namespace Laba1.Classes
 
             do
             {
-                swapped = false;
+                iterations++;
 
+                swapped = false;
                 for (int i = 1; i < n; i++)
                 {
+                    iterations++;
                     if (arr[i - 1] > arr[i])
                     {
-                        iterations++;
                         // Swap arr[i-1] and arr[i]
                         int temp = arr[i - 1];
                         arr[i - 1] = arr[i];

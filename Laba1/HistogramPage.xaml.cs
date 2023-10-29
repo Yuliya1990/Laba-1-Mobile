@@ -8,20 +8,25 @@ namespace Laba1
 {
     public partial  class HistogramPage : ContentPage
     {
-        private readonly int[] dataArray;
+        private readonly int[] _SortedArray;
+        private readonly int[] _notSortedArray;
 
-        public HistogramPage(int[] dataArray)
+        public HistogramPage(int[] notSortedArray, int[] SortedArray)
         {
             InitializeComponent();
-            this.dataArray = dataArray;
+            this._SortedArray = SortedArray;
+            _notSortedArray = notSortedArray;
             Title = "Histogram";
             BuildChart();
         }
         private void BuildChart()
         {
-            var builder = new ChartBuilder();
-            builder.FillEntriesUsingText(dataArray);
-            ChartView.Chart = builder.Build();
+            var builder1 = new ChartBuilder();
+            builder1.FillEntriesUsingText(_notSortedArray);
+            ChartView1.Chart = builder1.Build();
+            var builder2 = new ChartBuilder();
+            builder2.FillEntriesUsingText(_SortedArray);
+            ChartView2.Chart = builder2.Build();
         }
 
 

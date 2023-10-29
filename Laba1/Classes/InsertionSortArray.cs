@@ -14,6 +14,7 @@ namespace Laba1.Classes
             int n = arr.Length;
             for (int i = 1; i < n; i++)
             {
+                iterations++;
                 int key = arr[i];
                 int j = i - 1;
 

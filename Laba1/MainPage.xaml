@@ -19,20 +19,13 @@
             <Button  WidthRequest="300" Margin="10" x:Name="ShowHistogramPage" Text="Histogram Page" Clicked="ShowHistogramPageClick"/>
 
             <VerticalStackLayout x:Name="EnterPathComponent">
-            <Label
+                <Label
                 Margin="10"
-                Text="Please write the path"
+                Text="Upload the file"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="25"
                 HorizontalOptions="Center" />
-            <Entry WidthRequest="300"
-                   Margin="10"
-                Placeholder="Enter path..."
-                x:Name="PathEntry" 
-                HorizontalOptions="Center" 
-                />
-
-                <Button  WidthRequest="300" Margin="10" x:Name="Ok" Text="Ok" Clicked="EnterPathClick"/>
+                <Button  WidthRequest="300" Margin="10" x:Name="Upload" Text="Upload" Clicked="OpenFileClick"/>
             <Label
                 Margin="10"
                 Text="or create new file:"
@@ -41,7 +34,7 @@
                 HorizontalOptions="Center" />
                 <Entry WidthRequest="300"
        Margin="10"
-    Placeholder="Enter path..."
+    Placeholder="Write your integers here..."
     x:Name="NewArrayToFile" 
     HorizontalOptions="Center" 
     />

@@ -5,11 +5,12 @@
              xmlns:microchartsMaui="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
              x:Class="Laba1.HistogramPage"
              Title="HistogramPage">
-    <ContentPage.Content>
+    <ScrollView>
         <StackLayout Padding="10">
             <Label Text="Histogram" />
-            <microchartsMaui:ChartView x:Name="ChartView" WidthRequest="400" HeightRequest="400"/>
+            <microchartsMaui:ChartView x:Name="ChartView1" WidthRequest="400" HeightRequest="400"/>
+            <microchartsMaui:ChartView x:Name="ChartView2" WidthRequest="400" HeightRequest="400"/>
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 
 </ContentPage>

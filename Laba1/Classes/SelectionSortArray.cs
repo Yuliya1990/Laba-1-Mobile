@@ -24,6 +24,7 @@ namespace Laba1.Classes
                 int min = i;
                 for (int j = i + 1; j < n; j++)
                 {
+                    iterations++;
                     if (arr[j] < arr[min])
                     {
                         min = j;
